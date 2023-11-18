@@ -40,6 +40,7 @@
 
         <junit.version>4.13.1</junit.version>
         <testng.version>6.14.3</testng.version>
+<!--        <mockito.version>4.1.0</mockito.version>-->
         <mockito.version>3.6.0</mockito.version>
         <system.rules.version>1.16.0</system.rules.version>
 
@@ -47,7 +48,7 @@
         <maven.plugin.plugin>3.6.1</maven.plugin.plugin>
         <surefire.version>2.22.2</surefire.version>
         <netty.version>4.1.90.Final</netty.version>
-        <spring.boot.version>3.0.9</spring.boot.version>
+        <spring.boot.version>2.7.16</spring.boot.version>
     </properties>
 
     <dependencyManagement>
