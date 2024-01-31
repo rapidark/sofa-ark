@@ -45,6 +45,8 @@ public class Constants {
      */
     public final static String       CONF_BASE_DIR                                 = "conf/";
     public final static String       ARK_CONF_BASE_DIR                             = "conf/ark";
+    public final static String       APPLICATION_CONF_BASE_DIR                     = "src/main/resources";
+    public final static String       APPLICATION_CONF_FILE_FORMAT                  = "application.properties";
     public final static String       ARK_CONF_FILE                                 = "bootstrap.properties";
     public final static String       ARK_CONF_FILE_FORMAT                          = "bootstrap-%s.properties";
 
