@@ -593,7 +593,7 @@ public class RepackageMojo extends TreeMojo {
         }
 
         extensionExcludeArtifactsInProperties(baseDir + File.separator + APPLICATION_CONF_BASE_DIR
-                + File.separator + APPLICATION_CONF_FILE_FORMAT);
+                                              + File.separator + APPLICATION_CONF_FILE_FORMAT);
         // extension from url
         if (StringUtils.isNotBlank(packExcludesUrl)) {
             extensionExcludeArtifactsFromUrl(packExcludesUrl, artifacts);
@@ -1062,7 +1062,6 @@ public class RepackageMojo extends TreeMojo {
 
     }
 
-
     /**
      * We support put sofa-ark-maven-plugin exclude config by setting config in application.properties
      * The following are examples, with different sub-items separated by commas.
@@ -1079,13 +1078,13 @@ public class RepackageMojo extends TreeMojo {
                     String dataLine = key.toString();
                     if (dataLine.startsWith(EXTENSION_EXCLUDES)) {
                         ParseUtils.parseExcludeConfInProperties(excludes,
-                                properties.getProperty(dataLine), EXTENSION_EXCLUDES);
+                            properties.getProperty(dataLine), EXTENSION_EXCLUDES);
                     } else if (dataLine.startsWith(EXTENSION_EXCLUDES_GROUPIDS)) {
                         ParseUtils.parseExcludeConfInProperties(excludeGroupIds,
-                                properties.getProperty(dataLine), EXTENSION_EXCLUDES_GROUPIDS);
+                            properties.getProperty(dataLine), EXTENSION_EXCLUDES_GROUPIDS);
                     } else if (dataLine.startsWith(EXTENSION_EXCLUDES_ARTIFACTIDS)) {
                         ParseUtils.parseExcludeConfInProperties(excludeArtifactIds,
-                                properties.getProperty(dataLine), EXTENSION_EXCLUDES_ARTIFACTIDS);
+                            properties.getProperty(dataLine), EXTENSION_EXCLUDES_ARTIFACTIDS);
                     }
                 }
             } catch (IOException e) {
